@@ -1,0 +1,293 @@
+.background-container {
+  position: relative;
+  width: 100%;
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 270px;
+  background: #002754;
+  background-image: url("");
+  background-size: cover;
+  background-position: center;
+}
+
+.centered-content {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  justify-content: center;
+}
+
+.main-header {
+  display: flex;
+  padding: 20px 80px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.selection-port {
+  background-color: aqua;
+  height: 180px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.describe-section {
+  width: 100%;
+  max-width: 800px;
+}
+
+.first-overview {
+  font-size: 24px;
+}
+
+.black-text {
+  color: #00ffff;
+  font-weight: 600;
+}
+
+.super-man {
+  height: 173px;
+  width: 173px;
+  display: flex;
+  border-radius: 50%;
+}
+
+.super-cv {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+.super-admin {
+  width: 100%;
+  height: auto;
+  box-shadow: 0px  40px 20px 20px rgba(0, 0, 255, 0.5); /* Blue shadow */
+    border-radius: 5px;
+}
+
+.main-section {
+  padding: 0 20px;
+}
+
+.super-text {
+  color: #09cdcd;
+  font-size: 2rem;
+  font-size: 500;
+  margin: 0;
+}
+
+.section-bloger {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.skills-blonging {
+  margin: 0 !important;
+}
+
+.seeking-section {
+  color: #555;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.skill-text {
+  color: #09cdcd;
+  font-size: 18px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.about-sector {
+  padding: 20px 0;
+}
+
+.icon-text-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+
+.slode-data {
+  background-color: aqua;
+  padding: 50px;
+}
+
+.super-sliding {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.heading-with-border {
+  position: relative;
+  font-size: 36px;
+  font-weight: 400;
+  color: black;
+  text-align: center;
+}
+
+.heading-with-border::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -15px;
+  width: 50%;
+  height: 8px;
+  background-color: #00cbcb;
+}
+
+.education-alllied {
+  background-color: white;
+  padding: 50px;
+}
+.alllied{
+  background-color: #f8f9fa;
+}
+
+.portfolio-sliding {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+@media screen and (max-width:1024px) {
+  .background-container {
+    padding: 177px 0px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .main-section {
+    padding: 10px;
+  }
+
+  .section-bloger {
+    font-size: 1.5rem;
+  }
+
+  .super-text {
+    font-size: 1.7rem;
+  }
+
+  .container,
+  .container-sm {
+    max-width: 100% !important;
+  }
+  .super-admin {
+    width: 100%;
+    height: auto;
+    box-shadow: 0px  0px 20px 20px rgba(0, 0, 255, 0.5); /* Blue shadow */
+      border-radius: 5px;
+  }
+}
+
+@media screen and (max-width:704px) {
+  .section-bloger {
+    font-size: 1.3rem;
+  }
+
+  .super-text {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width:727px) {
+  .first-overview {
+    font-size: 18px;
+  }
+
+  .main-header {
+    padding: 20px;
+  }
+
+  .education-alllied {
+    padding: 20px !important;
+  }
+}
+
+@media screen and (max-width:636px) {
+  .section-bloger {
+    font-size: 1.2rem;
+  }
+
+  .super-text {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width:575px) {
+  .section-bloger {
+    font-size: 1.1rem;
+  }
+
+  .super-text {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width:520px) {
+  .section-bloger {
+    font-size: 1rem;
+  }
+
+  .super-text {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width:479px) {
+  .section-bloger {
+    font-size: 1rem;
+  }
+
+  .super-text {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width:425px) {
+  .first-overview {
+    font-size: 16px;
+  }
+
+  .section-bloger {
+    font-size: 1.4rem;
+  }
+
+  .super-text {
+    font-size: 1.6rem;
+
+  }
+
+}
+
+@media screen and (max-width:370px) {
+
+  .section-bloger {
+    font-size: 1.1rem;
+  }
+
+  .super-text {
+    font-size: 1.4rem;
+
+  }
+
+}

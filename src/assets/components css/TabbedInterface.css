@@ -1,0 +1,64 @@
+/* TabbedInerface.css */
+
+.tabs-container {
+    width: 80%;
+    margin: 30px auto;    
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 80px;
+  }
+  
+  .tabs button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #655be1;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .tabs button.active {
+    background-color: rgb(15, 219, 93);
+  }
+  
+  .tab-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .project-card {
+    flex: 1;
+    min-width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .project-card h4 {
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  .project-card p {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  @media screen and (max-width:350px){
+    .tabs-container{
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  
+

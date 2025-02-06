@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c2942;
+  color: #fff;
+  padding: 20px 100px !important;
+  position: fixed !important;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+
+.custom-logo {
+  display: inline-block;
+  position: relative;
+  padding: 5px 10px;
+  color: #fff;
+  font-family: 'Dancing Script', cursive;
+  font-size: 24px;
+  text-align: center;
+  background: linear-gradient(to right, #00cccc, #00cccc) no-repeat;
+  background-size: cover;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.custom-logo span {
+  z-index: 1;
+  color: #ffffff;
+  position: relative;
+}
+
+.navbar__links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__links li {
+  margin: 0 15px;
+}
+
+.navbar__links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.navbar__links li a:hover {
+  color: #4caf50;
+}
+
+.navbar__toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1100;
+}
+
+.bar {
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.bar1.rotate1 {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.bar2.fade {
+  opacity: 0;
+}
+
+.bar3.rotate2 {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+@media (max-width: 792px) {
+  .navbar {
+    padding: 20px 20px !important;
+    position: relative;
+  }
+
+  .navbar__toggle {
+    display: flex;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1100;
+  }
+
+  .navbar__links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 100%;
+    background-color: #1c2942;
+    padding: 20px 40px;
+    transition: right 0.99s ease-in-out;
+    z-index: 1000;
+  }
+
+  .navbar__links.active {
+    right: 0;
+  }
+
+  .navbar__links li {
+    margin: 10px 0;
+    padding: 10px 10px;
+    border-bottom: 1px solid yellow;
+  }
+
+
+}
