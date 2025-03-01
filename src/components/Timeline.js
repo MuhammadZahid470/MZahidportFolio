@@ -4,7 +4,7 @@ import '../assets/components css/Timeline.css';
 
 const CareerTimeline = () => {
     return (
-        <div>
+        <div className='experien_section'>
             <div className='first-sliding'>
                 <p className="heading-with-border">Experience</p>
             </div>
@@ -24,15 +24,15 @@ const CareerTimeline = () => {
                             </div>
                             <div className="timeline-content">
                                 <div className='main-resourece'>
-                                    <h3 >Web Developer</h3>
-                                    <p>Yamani International</p>
-                                    <p>Daska, Sialkot</p>
+                                    <h3>Techenical Engineer</h3>
+                                    <p>Storm Fiber</p>
+                                    <p>Lahore</p>
                                     <p className='super-responsibilities'>Responsibilties</p>
                                 </div>
                                 <ul>
-                                    <li>Handled projects from planning to implementation.</li>
-                                    <li>Used Asp.net webforms for full stack applications.</li>
-                                    <li>Tackled React js projects by coordinating with backend team.</li>
+                                    <li>Oversaw operations, ensured goals met.</li>
+                                    <li>Assigned tasks, supported team.</li>
+                                    <li>Monitored quality, reported progress.</li>
                                 </ul>
                             </div>
                         </div>
@@ -50,8 +50,8 @@ const CareerTimeline = () => {
                             <div className="timeline-content">
                                 <div className='main-resourece'>
                                     <h3>React Js Developer</h3>
-                                    <p>ILI Digital</p>
-                                    <p>Tricon center, Lahore</p>
+                                    <p>codelounge</p>
+                                    <p>Wapda Town, Lahore</p>
                                     <p className='super-responsibilities'>Responsibilties</p>
                                 </div>
                                 <ul>

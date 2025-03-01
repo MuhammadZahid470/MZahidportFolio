@@ -1,47 +1,64 @@
 .background-container {
   position: relative;
-  width: 100%;
-  margin-top: 80px;
+  height: 100vh;
+  /* Full height of the viewport */
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 270px;
   background: #002754;
-  background-image: url("");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  /* Ensure padding doesn't affect width */
 }
 
 .centered-content {
-  position: absolute;
-  z-index: 2;
+  z-index: 1;
   color: white;
+  height: auto;
   text-align: center;
   justify-content: center;
 }
 
+
 .main-header {
   display: flex;
-  padding: 20px 80px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: 1;
+  color: white;
+  padding: 40px 20px;
+  height: auto;
+  text-align: center;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .selection-port {
   background-color: aqua;
-  height: 180px;
-  width: 180px;
+  height: 200px;
+  width: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   padding: 4px;
+  margin-bottom: 20px;
+}
+
+.super-man {
+  height: 193px;
+  width: 193px;
+  display: flex;
+  border-radius: 50%;
 }
 
 .describe-section {
   width: 100%;
   max-width: 800px;
+  margin-top: 10px;
 }
 
 .first-overview {
@@ -51,28 +68,41 @@
 .black-text {
   color: #00ffff;
   font-weight: 600;
-}
-
-.super-man {
-  height: 173px;
-  width: 173px;
-  display: flex;
-  border-radius: 50%;
+  background-color: transparent !important;
 }
 
 .super-cv {
-  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 50px;
+  padding: 30px;
+}
+
+.super-cv a button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.super-cv a button:hover {
+  background-color: #002754;
+}
+
+.black-text {
+  color: #00ffff;
+  font-weight: 600;
+  background-color: transparent !important;
 }
 
 .super-admin {
   width: 100%;
   height: auto;
-  box-shadow: 0px  40px 20px 20px rgba(0, 0, 255, 0.5); /* Blue shadow */
-    border-radius: 5px;
+  box-shadow: 0px 40px 20px 20px rgba(0, 0, 255, 0.5);
+ border-radius: 5px;
 }
 
 .main-section {
@@ -110,7 +140,7 @@
 }
 
 .about-sector {
-  padding: 20px 0;
+  padding: 30px 0;
 }
 
 .icon-text-container {
@@ -133,6 +163,10 @@
   justify-content: center;
   flex-direction: column;
 }
+.educat_section{
+  background-color: white;
+  padding: 70px;
+}
 
 .heading-with-border {
   position: relative;
@@ -152,12 +186,16 @@
   height: 8px;
   background-color: #00cbcb;
 }
+.super-about{
+  padding: 30px 0;
+}
 
 .education-alllied {
   background-color: white;
   padding: 50px;
 }
-.alllied{
+
+.alllied {
   background-color: #f8f9fa;
 }
 
@@ -176,7 +214,24 @@
 
 @media screen and (max-width:768px) {
   .main-section {
-    padding: 10px;
+    padding: 20px 0px;
+  }
+  .selection-port {
+    height: 150px;
+    width: 150px;
+  }
+
+  .super-man {
+    height: 143px;
+    width: 143px;
+  }
+
+  .first-overview {
+    font-size: 1.5rem;
+  }
+
+  .super-cv {
+    padding: 20px;
   }
 
   .section-bloger {
@@ -191,11 +246,13 @@
   .container-sm {
     max-width: 100% !important;
   }
+
   .super-admin {
     width: 100%;
     height: auto;
-    box-shadow: 0px  0px 20px 20px rgba(0, 0, 255, 0.5); /* Blue shadow */
-      border-radius: 5px;
+    box-shadow: 0px 0px 20px 20px rgba(0, 0, 255, 0.5);
+    /* Blue shadow */
+    border-radius: 5px;
   }
 }
 
@@ -210,10 +267,7 @@
 }
 
 @media screen and (max-width:727px) {
-  .first-overview {
-    font-size: 18px;
-  }
-
+ 
   .main-header {
     padding: 20px;
   }
@@ -261,22 +315,25 @@
   .super-text {
     font-size: 1rem;
   }
+  .educat_section{
+    padding: 80px 20px;
+  }
 }
 
 @media screen and (max-width:425px) {
-  .first-overview {
-    font-size: 16px;
-  }
-
+ 
+  
   .section-bloger {
     font-size: 1.4rem;
+  }
+  .first-overview{
+    font-size: 1.5rem;
   }
 
   .super-text {
     font-size: 1.6rem;
 
   }
-
 }
 
 @media screen and (max-width:370px) {
@@ -284,10 +341,18 @@
   .section-bloger {
     font-size: 1.1rem;
   }
+  .first-overview{
+    font-size: 1.2rem;
+  }
 
   .super-text {
     font-size: 1.4rem;
 
   }
 
+}
+@media screen and (max-width:320px) {
+  .icon-text-container{
+    gap: 10px;
+  }
 }

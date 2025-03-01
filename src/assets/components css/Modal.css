@@ -1,0 +1,105 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    min-width: 500px;
+    max-width: 900px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.image-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.modal-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.arrow-btn {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    background: #002754;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.arrow-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Optional: Ensure icons are white and centered */
+.arrow-btn i {
+    color: white;
+    font-weight: 600;
+    font-size: 34px;
+}
+
+.arrow-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+    /* Hover effect */
+}
+
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: black;
+    /* Changed to black for visibility on white background */
+}
+
+.close-btn:hover {
+    color: #ff0000;
+}
+
+.image-counter {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}

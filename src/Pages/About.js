@@ -7,11 +7,10 @@ import z from '../assets/images/z.jpeg';
 
 const About = () => {
     const handleDownloadCV = () => {
-        // Specify the file path (ensure the file is in the public folder or accessible)
-        const fileUrl = '/files/your-cv-file.pdf'; // Replace with the actual path to your CV
+        const fileUrl = '/files/your-cv-file.pdf';
         const link = document.createElement('a');
         link.href = fileUrl;
-        link.download = 'My_CV.pdf'; // Replace with the desired file name
+        link.download = 'MZahid.pdf';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -19,15 +18,15 @@ const About = () => {
     return (
         <div>
             <div className='super-about'>
-                <div className="super-cv">
-                    <a href="/Files/CV.pdf" download="My_CV.pdf">
-                        <Button styleClass="black">Download CV</Button>
-                    </a>
-                </div>
                 <div className="container">
+                    <div className="super-cv">
+                        <a href="/Files/CV.pdf" download="My_CV.pdf">
+                            <Button styleClass="black">Download CV</Button>
+                        </a>
+                    </div>
                     <div className="row about-sector">
                         <div className="col-md-6 text-center ">
-                            <img src={z} alt='crypto' className='super-admin'  />
+                            <img src={z} alt='crypto' className='super-admin' />
                         </div>
                         <div className="col-md-6 ">
                             <div className='main-section'>
@@ -48,7 +47,7 @@ const About = () => {
                                 </div>
                                 <p className="icon-text-container"><FaCalendarAlt style={{ color: '#09cdcd' }} /> 13-Sep-1997</p>
                                 <p className="icon-text-container"><FaPhoneAlt style={{ color: '#09cdcd' }} /> 0304-1536740</p>
-                                <p className="icon-text-container"><FaEnvelope style={{ color: '#09cdcd' }} />muhammadzahid470786@</p>
+                                <p className="icon-text-container"><FaEnvelope style={{ color: '#09cdcd' }} />muhammadzahid470786@gmail.com</p>
                                 <p className="icon-text-container"> <FaMapMarkerAlt style={{ color: '#09cdcd' }} /> Johar Town, Lahore,Pakistan</p>
                             </div>
                         </div>

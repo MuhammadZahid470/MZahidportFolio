@@ -3,7 +3,7 @@ import Slider from '../components/Slider'
 
 const Education = () => {
   return (
-    <div>
+    <div className='educat_section'>
        <div className='super-sliding'>
        <p className="heading-with-border">Education</p>
        </div>

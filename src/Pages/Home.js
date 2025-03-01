@@ -8,31 +8,42 @@ import About from './About';
 import Experience from './Experience';
 import Portfolio from './Portfolio';
 import Education from './Education';
+import Button from '../components/Button';
 
 const Home = () => {
     useEffect(() => {
-        window.scrollTo(0, 0);  // Ensure the page starts at the top when loaded
+        window.scrollTo(0, 0);
     }, []);
+    const handleDownloadCV = () => {
+        const fileUrl = '/files/your-cv-file.pdf';
+        const link = document.createElement('a');
+        link.href = fileUrl;
+        link.download = 'My_CV.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
 
     return (
-        <div id="home"> {/* Set the ID to home for smooth scrolling */}
-            <Navbar />  {/* Render Navbar here */}
+        <div id="home">
+            <Navbar />
             <div className='super-display'>
-                <div className="background-container">
-                    <ConnectionScience />
-                    <div className="centered-content">
+                <div className='allied-dashboard'>
+                    <div className="background-container">
+                        <ConnectionScience />
                         <div className="main-header">
                             <div className="selection-port">
                                 <img src={z} alt="crypto" className="super-man" />
                             </div>
-                            <h1>Muhammad Zahid</h1>
                             <div className='describe-section'>
+                                <h1>Muhammad Zahid</h1>
                                 <p className='first-overview'>
                                     This is my official portfolio website to showcase all my work related to{' '}
                                     <span className="black-text">React.js</span> and{' '}
                                     <span className="black-text">Next.js</span>.
                                 </p>
-                            </div>                     
+
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -49,7 +60,7 @@ const Home = () => {
                 </section>
                 <section id="portfolio">
                     <Portfolio />
-                </section> 
+                </section>
             </div>
         </div>
     );
