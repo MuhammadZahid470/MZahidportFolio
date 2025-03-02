@@ -20,7 +20,7 @@ const CareerTimeline = () => {
                             </div>
                             <span className='making-careft text-white'>1</span>
                             <div className="timeline-date super ">
-                                <p>11-2019 - 12-2020</p>
+                                <p>10-01-2023 - 25-12-2023</p>
                             </div>
                             <div className="timeline-content">
                                 <div className='main-resourece'>
@@ -45,7 +45,7 @@ const CareerTimeline = () => {
                             </div>
                             <span className='second-careft text-white'>2</span>
                             <div className="timeline-date carefting ">
-                                <p>01-2021 - 06-2021</p>
+                                <p>05-01-2024 - Present</p>
                             </div>
                             <div className="timeline-content">
                                 <div className='main-resourece'>

@@ -14,15 +14,7 @@ const Home = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
-    const handleDownloadCV = () => {
-        const fileUrl = '/files/your-cv-file.pdf';
-        const link = document.createElement('a');
-        link.href = fileUrl;
-        link.download = 'My_CV.pdf';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    };
+
 
     return (
         <div id="home">

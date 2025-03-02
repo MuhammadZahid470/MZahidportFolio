@@ -2,8 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import '../assets/components css/Modal.css';
-// If using npm, uncomment the next line
-// import 'bootstrap-icons/font/bootstrap-icons.css';
+
 
 const Modal = ({ show, onClose, project }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
