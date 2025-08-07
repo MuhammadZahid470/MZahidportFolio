@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1c2942;
+  background-color: #152c55;
   color: #fff;
   padding: 20px 100px !important;
   position: fixed !important;
@@ -22,13 +22,12 @@
   font-family: 'Dancing Script', cursive;
   font-size: 24px;
   text-align: center;
-  background: linear-gradient(to right, #00cccc, #00cccc) no-repeat;
+  background: transparent;
   background-size: cover;
   mask-size: contain;
   -webkit-mask-size: contain;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
-  width: 150px;
   height: 40px;
   display: flex;
   justify-content: center;

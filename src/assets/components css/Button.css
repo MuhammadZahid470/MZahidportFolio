@@ -53,14 +53,25 @@
     color: black;
   }
   
+.button.animated {
+  background-color: #1c2942;
+  color: white;
+  gap: 10px;
+  display: flex;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 5px 20px;
+  display: inline-block;
+}
+
+/* ✅ Full width on small screens */
+@media (max-width: 500px) {
   .button.animated {
-    background-color: #1c2942;
-    color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    margin: 10px;
-    padding: 5px 20px;
+    display: block;
+    width: 100%;
+    text-align: center;
   }
+}
   
   .button.animated:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);

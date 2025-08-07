@@ -1,7 +1,6 @@
 .background-container {
   position: relative;
-  height: 90vh;
-  /* Full height of the viewport */
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -101,12 +100,18 @@
 .super-admin {
   width: 100%;
   height: auto;
-  box-shadow: 0px 40px 20px 20px rgba(0, 0, 255, 0.5);
- border-radius: 5px;
+  box-shadow: 0px 10px 15px 15px rgba(72, 228, 220, 0.5);
+  border-radius: 5px;
 }
 
 .main-section {
   padding: 0 20px;
+}
+
+@media (max-width: 425px) {
+.main-section {
+  padding: 0 0 !important;
+}
 }
 
 .super-text {
@@ -123,7 +128,9 @@
 }
 
 .skills-blonging {
-  margin: 0 !important;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .seeking-section {
@@ -163,7 +170,8 @@
   justify-content: center;
   flex-direction: column;
 }
-.educat_section{
+
+.educat_section {
   background-color: white;
   padding: 70px;
 }
@@ -186,7 +194,8 @@
   height: 8px;
   background-color: #00cbcb;
 }
-.super-about{
+
+.super-about {
   padding: 30px 0;
 }
 
@@ -216,6 +225,7 @@
   .main-section {
     padding: 20px 0px;
   }
+
   .selection-port {
     height: 150px;
     width: 150px;
@@ -267,7 +277,7 @@
 }
 
 @media screen and (max-width:727px) {
- 
+
   .main-header {
     padding: 20px;
   }
@@ -315,18 +325,20 @@
   .super-text {
     font-size: 1rem;
   }
-  .educat_section{
+
+  .educat_section {
     padding: 80px 20px;
   }
 }
 
 @media screen and (max-width:425px) {
- 
-  
+
+
   .section-bloger {
     font-size: 1.4rem;
   }
-  .first-overview{
+
+  .first-overview {
     font-size: 1.5rem;
   }
 
@@ -341,7 +353,8 @@
   .section-bloger {
     font-size: 1.1rem;
   }
-  .first-overview{
+
+  .first-overview {
     font-size: 1.2rem;
   }
 
@@ -351,8 +364,9 @@
   }
 
 }
+
 @media screen and (max-width:320px) {
-  .icon-text-container{
+  .icon-text-container {
     gap: 10px;
   }
 }

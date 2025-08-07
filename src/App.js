@@ -5,7 +5,6 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import Experience from './Pages/Experience';
 import Education from './Pages/Education';
-import Portfolio from './Pages/Portfolio';
 import Footer from './components/Footer';
 
 
@@ -18,7 +17,6 @@ const App = () => {
           <Route path='/about' element={<About />} />
           <Route path='/exper' element={<Experience />} />
           <Route path='/education' element={<Education />} />
-          <Route path='/portfolio' element={<Portfolio />} />
         </Routes>
         <Footer/>
     </div>

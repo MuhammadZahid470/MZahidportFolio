@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '../components/Button';
 import { FaCalendarAlt, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
-import z from '../assets/images/z.jpeg';
+import z from '../assets/images/z.png';
 
 
 
@@ -17,43 +17,42 @@ const About = () => {
     };
     return (
         <div>
-            <div className='super-about'>
-                <div className="container">
+           <div className="container">
                     <div className="super-cv">
                         <a href="/Files/CV.pdf" download="My_CV.pdf">
                             <Button styleClass="black">Download CV</Button>
                         </a>
                     </div>
-                    <div className="row about-sector">
-                        <div className="col-md-6 text-center ">
-                            <img src={z} alt='crypto' className='super-admin' />
+                    <div className="row about-sector mb-4">
+                        <div className="col-lg-6 text-center ">
+                            <div className='main-views'>
+                                <img src={z} alt='crypto' className='super-admin' />
+                            </div>
                         </div>
                         <div className="col-md-6 ">
                             <div className='main-section'>
                                 <p className="super-text">Who am i?</p>
-                                <p className="section-bloger">I am <span className="super-text">Muhammad Zahid</span>, a React.js and Next.js Developer</p>
-                                <p className='seeking-section'>Seeking a challenging position where I can develop my knowledge skills further and to be an effective team member. I am keenly interested in working in a career-oriented organization to acquire experience and professional skills and become a radical part of a challenging progressive organization.</p>
+                                <p className="section-bloger">I am <span className="super-text">Syed Farhan Sajjad </span>Certified Digital Marketing Specialist | SEO | Meta Ads | Google Analytics</p>
+                                <p className='seeking-section'>I’m a passionate and results-driven Full-Stack Social Media Manager, Content Creator, and Certified Canva Expert with over 4 years of proven experience in the digital marketing space. I help brands—from solo entrepreneurs to established businesses—grow their online presence, boost engagement, and build loyal communities through strategic content and creative storytelling.</p>
                                 <p className="skill-text">Skills:</p>
-                                <div className='skills-blonging'>
-                                    <Button styleClass="animated">HTML/CSS</Button>
-                                    <Button styleClass="animated">Bootstrap</Button>
-                                    <Button styleClass="animated">Tailwind</Button>
-                                    <Button styleClass="animated">SASS</Button>
-                                    <Button styleClass="animated">JavaScript</Button>
-                                    <Button styleClass="animated">React.js</Button>
-                                    <Button styleClass="animated">React Hooks</Button>
-                                    <Button styleClass="animated">Redux</Button>
-                                    <Button styleClass="animated">Next.js</Button>
+                                <div className='skills-blonging mb-2'>
+                                    <Button styleClass="animated">Social Media Manger</Button>
+                                    <Button styleClass="animated">Content Creator</Button>
+                                    <Button styleClass="animated">Canva Expert</Button>
+                                    <Button styleClass="animated">Grapics Designer</Button>
+                                    <Button styleClass="animated">Meta Ads Specialist</Button>
+                                    <Button styleClass="animated">SEO Expert</Button>
+                                    <Button styleClass="animated">Social Media Marketing</Button>
+                                    <Button styleClass="animated">Google Ads</Button>
+                                    <Button styleClass="animated">Brand Adviser</Button>
                                 </div>
-                                <p className="icon-text-container"><FaCalendarAlt style={{ color: '#09cdcd' }} /> 13-Sep-1997</p>
-                                <p className="icon-text-container"><FaPhoneAlt style={{ color: '#09cdcd' }} /> 0304-1536740</p>
-                                <p className="icon-text-container"><FaEnvelope style={{ color: '#09cdcd' }} />muhammadzahid470786@gmail.com</p>
-                                <p className="icon-text-container"> <FaMapMarkerAlt style={{ color: '#09cdcd' }} /> Johar Town, Lahore,Pakistan</p>
+                                <p className="icon-text-container"><FaPhoneAlt style={{ color: '#09cdcd' }} /> +92 3040582154</p>
+                                <p className="icon-text-container"><FaEnvelope style={{ color: '#09cdcd' }} />farhanbukhari88@gmail.com</p>
+                                <p className="icon-text-container"> <FaMapMarkerAlt style={{ color: '#09cdcd' }} />Lahore, Punjab, Pakistan</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
     )
 }

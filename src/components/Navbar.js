@@ -13,7 +13,7 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="navbar__logo">
                 <div className="custom-logo">
-                    <span>M Zahid</span>
+                    <span>Syed Farhan</span>
                 </div>
             </div>
             <ul className={`navbar__links ${isMenuOpen ? "active" : ""}`}>
@@ -26,9 +26,6 @@ const Navbar = () => {
                 </li>
                 <li>
                     <Link to="education" smooth={true} duration={500}>Education</Link>
-                </li>
-                <li>
-                    <Link to="portfolio" smooth={true} duration={500}>Portfolio</Link>
                 </li>
             </ul>
             <div className="navbar__toggle" onClick={toggleMenu}>

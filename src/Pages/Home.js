@@ -2,13 +2,11 @@ import React, { useEffect } from 'react';
 import Navbar from '../components/Navbar';  // Import Navbar component
 import ConnectionScience from '../components/ConnectionScience';
 import '../assets/pages css/Home.css';
-import z from '../assets/images/z.jpeg';
+import z from '../assets/images/z.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import About from './About';
 import Experience from './Experience';
-import Portfolio from './Portfolio';
 import Education from './Education';
-import Button from '../components/Button';
 
 const Home = () => {
     useEffect(() => {
@@ -28,11 +26,9 @@ const Home = () => {
                                 <img src={z} alt="crypto" className="super-man" />
                             </div>
                             <div className='describe-section'>
-                                <h1>Muhammad Zahid</h1>
+                                <h1>Syed Farhan Sajjad</h1>
                                 <p className='first-overview'>
-                                    This is my official portfolio website to showcase all my work related to{' '}
-                                    <span className="black-text">React.js</span> and{' '}
-                                    <span className="black-text">Next.js</span>.
+                                    Social Media Marketing | SEO Expert |Social Media Content Marketing| Social Media Strategy | Canva Designer | Helping Brands Grow Online with Smart Strategies
                                 </p>
 
                             </div>
@@ -50,9 +46,7 @@ const Home = () => {
                 <section id="education">
                     <Education />
                 </section>
-                <section id="portfolio">
-                    <Portfolio />
-                </section>
+              
             </div>
         </div>
     );
